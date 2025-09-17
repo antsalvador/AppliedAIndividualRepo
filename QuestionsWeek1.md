@@ -1,4 +1,13 @@
-# What are the specific problems the team encounters in developing the CNN model for the diagnosis of skin cancer? I
+# What are the specific problems the team encounters in developing the CNN model for the diagnosis of skin cancer? 
+
+Despite the high effectiveness at identifying skin cancer lesions, CNN models are still prone to mistakes due to the many adversities skin cancer diagnosis involves. These  challenges include the high variability in skin images due to differences in skin tone, lighting, lesion appearance, and image quality, as well as the complexity and diversity of skin lesions themselves. Models must also cope with class imbalance in datasets—where malignant cases are much rarer than benign ones—and the subtlety of differences between lesion types, which can easily lead to misclassification.
+
+- **Lesion Complexity: Lesions vary in size, color, texture, and border irregularities, making feature extraction and classification difficult.**
+- **Dataset Limitations: Many datasets lack diversity, particularly in terms of skin tone, which impacts model inclusiveness and accuracy for underrepresented groups**
+- **Image Noise and Preprocessing: Artifacts, poor contrast, and the presence of hair or markings complicate lesion segmentation and diminish model performance.**
+
+### Relevant links: https://www.liebertpub.com/doi/10.1089/cbr.2024.0161 & https://pmc.ncbi.nlm.nih.gov/articles/PMC11295341/
+
 
 # Investigate the concepts of neural networks and machine learning. What are the basic principles of CNNs, and how do they differ from other machine learning techniques? What are the applications and limitations of these technologies in dermatology?
 
