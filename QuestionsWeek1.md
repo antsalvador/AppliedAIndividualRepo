@@ -1,4 +1,4 @@
-# What are the specific problems the team encounters in developing the CNN model for the diagnosis of skin cancer? 
+# Q1 What are the specific problems the team encounters in developing the CNN model for the diagnosis of skin cancer? 
 
 Despite the high effectiveness at identifying skin cancer lesions, CNN models are still prone to mistakes due to the many adversities skin cancer diagnosis involves. These  challenges include the high variability in skin images due to differences in skin tone, lighting, lesion appearance, and image quality, as well as the complexity and diversity of skin lesions themselves. Models must also cope with class imbalance in datasets—where malignant cases are much rarer than benign ones—and the subtlety of differences between lesion types, which can easily lead to misclassification.
 
