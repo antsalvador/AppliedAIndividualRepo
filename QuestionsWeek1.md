@@ -9,11 +9,44 @@ Despite the high effectiveness at identifying skin cancer lesions, CNN models ar
 ### Relevant links: https://www.liebertpub.com/doi/10.1089/cbr.2024.0161 & https://pmc.ncbi.nlm.nih.gov/articles/PMC11295341/
 
 
-# Investigate the concepts of neural networks and machine learning. What are the basic principles of CNNs, and how do they differ from other machine learning techniques? What are the applications and limitations of these technologies in dermatology?
+# Q2 Investigate the concepts of neural networks and machine learning. What are the basic principles of CNNs, and how do they differ from other machine learning techniques? What are the applications and limitations of these technologies in dermatology?
 
-# Consider various strategies to enhance the model's accuracy. These could range from optimising hyperparameters to using data augmentation, transfer learning, or integrating additional data such as patient information. Which methods are most suitable for this specific case?
+CNNs are specialized neural networks that learn hierarchical representations of spatial data, making them ideal for image analysis such as skin lesion detection. Unlike traditional machine learning methods (e.g., SVM, Random Forest), CNNs automatically extract features rather than relying on hand-crafted descriptors. 
+
+### Applications: CNNs excel in image classification, lesion segmentation, and prediction of malignancy, often matching dermatologists in image-level diagnosis.
+
+### Limitations: Require large, diverse datasets; sensitive to class imbalance and annotation noise; high computational resources; explainability and regulatory concerns in medical use remain significant
+
+### Relevant Link: 
+### https://arxiv.org/html/2505.21597v1
+
+# Q3 Consider various strategies to enhance the model's accuracy. These could range from optimising hyperparameters to using data augmentation, transfer learning, or integrating additional data such as patient information. Which methods are most suitable for this specific case?
+
+The most promising solution for skin cancer lesion detection is a custom CNN architecture with extensive data augmentation, class weighting to balance training, and inclusion of patient metadata if available. Transfer learning can also be used for rapid prototyping, though a problem-specific CNN may ultimately perform best due to the nuanced nature of skin lesion features. Ethical concerns include ensuring model fairness, preventing bias against underrepresented groups, and ensuring human oversight in final diagnosis.
+
+### Relevant Links: 
+### https://www.liebertpub.com/doi/10.1089/cbr.2024.0161
  
 # Select the most promising solution and substantiate this choice with arguments. How will this solution enhance the model's performance? Also consider the ethical implications of using AI in healthcare.
+
+The best solution for this case is a custom CNN architecture, optimized with data augmentation, class weighting, transfer learning for baseline comparison, and integration of patient metadata where available.
+
+- **Task-specific models outperform general ones due to their ability to target dermatological image features.**
+
+- **Augmentation and class weighting counteract dataset imbalance.**
+
+- **Combining patient data and expert feedback increases accuracy and clinical trustworthiness.**
+
+### Ethical Issues:
+
+- **AI in healthcare must be validated thoroughly to prevent diagnostic errors.**
+
+- **Must address biases (e.g., underrepresentation of skin tones) to avoid discriminatory outcomes.**
+
+- **A clinician should always review and interpret model outputs for patient safety.**
+
+
+
 
 # What steps are needed to improve the model? What tools and programming languages will you use? What will the collaboration with dermatologists look like?
 
